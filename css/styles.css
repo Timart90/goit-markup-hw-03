@@ -1,0 +1,217 @@
+/* основний фон- #FFFFFF
+кнопки та Web (Iris) - #4D5AE5
+контакати, заголовки та Studio  (Navyblue)- #2E2F42
+колір основного тексту - #434455 
+кнопки при наведенні (Ocean) -#404BBF
+background: #E5E5E5
+футер-(Cloud) #F4F4FD */
+
+.list {
+  list-style: none;
+}
+
+:root {
+  --primary-white-color: #ffffff;
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --button-web: #4d5ae5;
+  --cloud: #f4f4fd;
+  --CORNFLOWER: #e7e9fc;
+  --ocean: #404bbf;
+}
+
+/* ---Body--- */
+
+body {
+  background-color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+/**
+  |============================
+  | LOGO
+  |============================
+*/
+
+.logo.link {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--button-web);
+  list-style: none;
+}
+.studio {
+  color: var(--title-text-color);
+  list-style: none;
+  text-decoration: none;
+}
+
+/**
+  |============================
+  | Site Nav
+  |============================
+*/
+
+.nav.link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.nav.link:hover,
+.nav.link:focus {
+  color: var(--ocean);
+}
+
+.lists {
+  font-style: normal;
+}
+
+.link {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  list-style: none;
+  text-decoration: none;
+}
+
+.box.link:hover,
+.box.link:focus {
+  color: var(--ocean);
+}
+
+/*---- HERO---- */
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-white-color);
+  background-color: var(--button-web);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--ocean);
+  color: var(--ocean);
+}
+
+.hero {
+  background-color: var(--title-text-color);
+}
+
+.hero.title {
+  text-align: center;
+  font-style: normal;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+/* --Feature-- */
+
+.list.title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.list.text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Section Work */
+
+.work {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+}
+
+/* Section TEAM */
+
+.section.team {
+  background-color: var(--cloud);
+}
+
+.team.title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.worker {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.list.worker {
+  background-color: var(--primary-white-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* Portfolio */
+
+.buttons {
+  font-family: 'Roboto', sans-serif;
+  color: var(--button-web);
+  background-color: var(--cloud);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  color: var(--primary-white-color);
+}
+.buttons:focus {
+  color: var(--primary-white-color);
+  background-color: var(--ocean);
+}
+
+.list {
+  list-style: none;
+}
+
+/* --FOOTER-- */
+
+.footer {
+  background-color: var(--title-text-color);
+}
+
+.studio.log {
+  color: var(--cloud);
+}
