@@ -114,6 +114,7 @@ body {
 .logo {  
   padding-top: 24px;
   padding-bottom: 24px;
+   margin-right: 76px;
 
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -131,7 +132,7 @@ body {
   color: var(--SLATE-Body-text);
   list-style: none;
   text-decoration: none;
-  margin-right: 76px;
+ 
 }
 
 /**
@@ -148,11 +149,11 @@ body {
    display: flex; 
 } 
 
-.nav-list .item {
+.nav-list li {
     margin-right: 40px;
     
 }
-.nav-list .item:last-child {
+.nav-list li:last-child {
   margin-right: 0;
 }
 
@@ -219,6 +220,7 @@ body {
 .hero {
   background-color: var(--SLATE-Body-text);
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -231,6 +233,7 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .hero-btn {
@@ -246,9 +249,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
   padding: 16px 32px;
-
-  
-   
+  min-width: 169px;
+   height: 56px;
+   border: none;
 }
 
 .hero-btn:hover,
@@ -347,6 +350,7 @@ width: calc((100% - 72px)/4);
 margin-right: 24px;
 width: 264px;
 background-color: var(--White-background);
+ border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .item:nth-child(4) {
@@ -380,19 +384,19 @@ background-color: var(--White-background);
 
 .port {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+  padding: 96px 0 120px;
 }
 
 .port-list-btn {
   display: flex; 
-  width: 586px;
   gap: 24px;
-  flex:content
-}
-.port-list-btn .item {
-
-  }
+  flex:content;
+  justify-content: center;
+  margin-bottom: 72px;
    
+  /* flex-wrap: wrap; */
+}
 
 .port-btn {
   font-family: 'Roboto',sans-serif;
@@ -404,27 +408,43 @@ background-color: var(--White-background);
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 12px 24px;
+  border: 1px solid var(--CORNFLOWER);
+  border-radius: 4px;
 }
 
 .port-btn:hover,
 .port-btn:focus {
   color: var(--White-background);
   background-color: var(--ocean);
+  border: 1px solid transparent;
 }
 
 .port-list-galery {
   display: flex;
 flex-wrap: wrap;
-width: 360px;
-width: calc((100% - 48) / 3); 
+column-gap: 24px;
+row-gap: 48px;
+}
+
+.port-list-galery .item {
+  width: calc((100% - 48px) / 3);
 
 }
-.port-title,
-.port-text {
-  text-decoration: none;
-}
+
 .img-link {
   text-decoration: none;
+}
+
+.port-info{
+   padding: 32px 16px;
+   border: 1px solid var(--CORNFLOWER);
+   border-top: none;
+}
+
+.port-title {
+  margin-bottom: 8px;
+  
+
 }
 
 /**
@@ -435,7 +455,7 @@ width: calc((100% - 48) / 3);
 
 .footer {
   background-color: var(--Navy-blue-Dark);
- padding-top: 100px;
+ padding: 100px 0;
 }
 
 .footer-studio-logo{
@@ -445,8 +465,10 @@ width: calc((100% - 48) / 3);
   margin-bottom: 16px;
 }
 .footer-logo {
+  display: inline-block;
   letter-spacing: 0.03em;
   font-size: 18px;
+  margin-bottom: 16px;
 line-height: 1.17px;
 color: var(--Iris-Primary-Brand);
 font-family: 'Raleway';
