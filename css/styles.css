@@ -190,10 +190,7 @@ body {
 
 .address-list {
    display: flex;
-}
-
-.address-list .item+ .item {
-  margin-left: 12px;
+   gap: 40px;
 }
 
 .address-link {
@@ -443,7 +440,6 @@ row-gap: 48px;
 
 .port-title {
   margin-bottom: 8px;
-  
 
 }
 
