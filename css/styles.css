@@ -291,6 +291,9 @@ body {
   | Work
   |============================
 */
+.work.section {
+  padding-top: 0;
+}
 
 .work-list {
 display: flex;
@@ -391,8 +394,6 @@ background-color: var(--White-background);
   flex:content;
   justify-content: center;
   margin-bottom: 72px;
-   
-  /* flex-wrap: wrap; */
 }
 
 .port-btn {
@@ -432,7 +433,7 @@ row-gap: 48px;
   text-decoration: none;
 }
 
-.port-info{
+.port-info {
    padding: 32px 16px;
    border: 1px solid var(--CORNFLOWER);
    border-top: none;
@@ -440,6 +441,19 @@ row-gap: 48px;
 
 .port-title {
   margin-bottom: 8px;
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--Navy-blue-Dark);
+
+}
+.port-text {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--SLATE-Body-text);
 
 }
 
@@ -479,5 +493,4 @@ text-decoration: none;
   letter-spacing: 0.02em;
   color: var(--cloud-Light);
   width: 264px;
-  padding-bottom: 100px;
 }
